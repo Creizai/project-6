@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
-//const bookmarkRoutes = require("./lib/routes/bookmarks.js");
+const quotesRoutes = require("./lib/routes/routes.js");
 
-app.listen(8080, () => console.log("Port 8080, reporting for duty sir."));
+app.listen(8081, () => console.log("Port 8080, reporting for duty sir."));
 
 // When user requests at the root / of our application, .use
-//app.use("/", bookmarkRoutes);
+app.use("/", quotesRoutes);
