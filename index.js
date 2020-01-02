@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const quotesRoutes = require("./lib/routes/quotes.js");
+const quotesControllers = require("./lib/controllers/quotes.js");
 
 // When user requests at the root / of our application, .use
 app.use("/", quotesRoutes);
