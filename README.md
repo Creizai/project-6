@@ -30,7 +30,7 @@ Post Body Section
 
 ```
   {
-    "quote" : "Your quote",
+  "quote" : "Your quote",
 	"answer" : "Who quote is from"
   }
 ```
