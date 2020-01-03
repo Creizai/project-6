@@ -4,6 +4,8 @@ const quotesRoutes = require("./lib/routes/quotes.js");
 var parser = require("body-parser");
 let port = 8081;
 
+app.set("port", process.env.PORT || port);
+
 // URL ENCODER
 app.use(parser.urlencoded({ extended: true }));
 
@@ -13,6 +15,12 @@ app.use(parser.json());
 // When user requests at the root / of our application, .use
 app.use("/", quotesRoutes);
 
-app.listen(port, () =>
-  console.log(`Listening on port ${port}, reporting for duty sir.`)
-);
+// Old listen
+// app.listen(port, () =>
+//   console.log(`Listening on port ${port}, reporting for duty sir.`)
+// );
+
+// Listen
+app.listen(app.get("port"), () => {
+  console.log(`✅ PORT: ${app.get("port")} 🌟`);
+});
