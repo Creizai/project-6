@@ -4,7 +4,11 @@ The idea is to create a trivia game api but for now I will be only saving quotes
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Fork and clone the repo
+Run mongod
+Run mongoose
+Run Express
+Node index.js
 
 ### Prerequisites
 
