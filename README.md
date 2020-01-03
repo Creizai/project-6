@@ -31,9 +31,7 @@ Post Body Section
   }
 ```
 
-Please only use these names
-
-And repeat
+Please only use these names for now
 
 ```
 Mal, Zoe, Jayne, Kaylee, Walsh, River
