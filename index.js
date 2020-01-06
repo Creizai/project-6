@@ -3,6 +3,7 @@ const app = express();
 const quotesRoutes = require("./lib/routes/quotes.js");
 var parser = require("body-parser");
 let port = 8081;
+var cors = require("cors");
 
 app.set("port", process.env.PORT || port);
 
@@ -13,7 +14,7 @@ app.use(parser.urlencoded({ extended: true }));
 app.use(parser.json());
 
 // When user requests at the root / of our application, .use
-app.use("/", quotesRoutes);
+app.use("/", cors(), quotesRoutes);
 
 // Old listen
 // app.listen(port, () =>
